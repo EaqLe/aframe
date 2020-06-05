@@ -9,13 +9,30 @@
   </head>
   <body>
     <a-scene background="color: #333333">
-      <a-box id="myBox"
-        width="3"
+      <a-plane id="myPlane"
+        width="100"
+        height="100"
+        color="green"
+        rotation="-90 0 0">
+      </a-plane>
+
+      <a-ring id="myRing"
+      	width="2"
         height="2"
-        depth="1"
-        color="#BBAA33" 
-        shadow>
-      </a-box>
+        depth="2"
+        color="green"
+        position="0.5 2 -2"
+        >
+    </a-ring>
+
+    <a-text value="Gengar" id="myText"
+        width="2"
+        height="2"
+        depth="2"
+        color="white"
+        position="0.5 2 -2"
+        >
+    </a-text>
     </a-scene>
   </body>
 </html>
